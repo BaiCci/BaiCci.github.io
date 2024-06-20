@@ -1,7 +1,7 @@
 name: "blog"
 description: "博客"
 
-avatar: https://pianfan.github.io/images/avatar.png
+avatar: https://telegraph-image-f1f.pages.dev/file/ada19b66ab86c6de3fd67.jpg
 favicon: https://pianfan.github.io/images/favicon.ico
 
 navigation:
@@ -18,9 +18,9 @@ excerpt_separator: <!-- more -->
 
 footer-links:
   zhihu: 
-  email: xiongyunhan@outlook.com
+  email: yuehuibu5561@outlook.com
   facebook:
-  github: pianfan
+  github: BaiCci
   rss: # just type anything here for a working RSS icon
   twitter: 
   youtube:
