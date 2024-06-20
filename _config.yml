@@ -2,7 +2,7 @@ name: "blog"
 description: "博客"
 
 avatar: https://telegraph-image-f1f.pages.dev/file/ada19b66ab86c6de3fd67.jpg
-favicon: https://pianfan.github.io/images/favicon.ico
+favicon: 
 
 navigation:
   - name: 首页
