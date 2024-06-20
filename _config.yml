@@ -1,5 +1,5 @@
-name: "blog"
-description: "博客"
+name: "网站名称"
+description: "个人博客"
 
 avatar: https://telegraph-image-f1f.pages.dev/file/ada19b66ab86c6de3fd67.jpg
 favicon: 
@@ -18,7 +18,7 @@ excerpt_separator: <!-- more -->
 
 footer-links:
   zhihu: 
-  email: yuehuibu5561@outlook.com
+  email:yuehuibu5561@outlook.com
   facebook:
   github: BaiCci
   rss:
