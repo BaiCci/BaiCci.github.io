@@ -11,25 +11,24 @@ on:
 
 jobs:
   build:
-    runs-on: ${{ matrix.os }}
+    runs-on: ubuntu-latest
 
     strategy:
       matrix:
         node-version: [lts/*]
-        os: [ubuntu-latest]
-      fail-fast: false
 
     steps:
-      - uses: actions/checkout@v2
+      - name: Checkout repository
+        uses: actions/checkout@v2
 
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v2
         with:
           node-version: ${{ matrix.node-version }}
-          registry-url: https://registry.npmjs.org/
+          registry-url: https://registry.npmjs.org/ # 如果需要，可以切换到国内镜像
 
       - name: 📦 Install Dependencies
-        run: npm i
+        run: npm ci # 使用 npm ci 而不是 npm i，以提高依赖安装的确定性和速度
 
       - name: 🌌 Build Valaxy Blog
         run: npm run build
@@ -39,4 +38,5 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
-          force_orphan: true
+          force_orphan: false # 通常不建议设置为 true，除非你有特殊需求
+          enable_jekyll: false # 如果你的静态站点不需要 Jekyll，可以设置为 false
